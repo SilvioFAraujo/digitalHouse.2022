@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/Background.jpg');
+    background-size: cover;
+    font-family: 'Texturina'
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 40px 0px;
+}
+
+header img {
+    width: 180px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+header button{
+    width: 8%;
+    background-color: white;
+    color: #167B63;
+    border: none;
+    height: 40px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.drop-down{
+    display: none;
+    height: 40px;
+    width: 40px;
+    background-color:transparent;
+    border: none;
+}
+
+.drop-down div{
+    background: white;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 4px;
+}
+
+.page-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    margin-top: 15vh;
+}
+
+.page-title div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:45%
+}
+
+.page-title h1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.page-title h3{
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 2.5rem;
+    width:42%;
+    color: white;
+}
+
+#page-title-button{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#btn-1{
+    width: 20%;
+    background-color: white;
+    color: #167B63;
+    border: none;
+    height: 40px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn-2{
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.055);
+    color: white;
+    border: 1px solid white;
+    height: 40px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+footer{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3rem;
+}
+
+footer h3{
+    color: white;
+    font-weight: lighter;
+}
+
+@media (max-width: 900px){
+    header{
+      padding: 40px 50px;
+    }
+    header nav a {
+        font-size: 12px;
+        padding: 20px 6px;
+    }
+}
+
+@media (max-width: 769px){
+    body{
+        background-size: auto;
+    }
+    header{
+        justify-content: space-between;
+        padding: 40px;
+    }
+    header nav{
+        display: none;
+    }
+    header button{
+        display:none;
+    }
+
+    .drop-down{
+        display: inline-block;
+    }
+
+    .page-title div{
+        width:100%
+    }
+    .page-title h1{
+        font-size: 2.7rem
+    }
+    .page-title h3{
+        margin-top: 2.2rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px){
+    body{
+        background-size: auto;
+    }
+    header{
+        justify-content: space-between;
+        padding: 40px;
+    }
+    header nav{
+        display: none;
+    }
+    header button{
+        display:none;
+    }
+
+    .drop-down{
+        display: inline-block;
+    }
+
+    .page-title div{
+        width:100%
+    }
+    .page-title h1{
+        font-size: 2.7rem
+    }
+    .page-title h3{
+        margin-top: 2.2rem;
+        width: 90%;
+    }
+
+    #page-title-button{
+        flex-direction: column;
+    }
+    #btn-1{
+        width: 80%;
+    }
+    #btn-2{
+        width: 80%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    footer {
+        position: relative;
+    }
+}
